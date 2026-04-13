@@ -1,0 +1,148 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: S1_R3_R4 - AT3_PBE 2
+meta:
+  id: wrk_b3b2356e6abb4ec78c6a5966d4f8b442
+  created: 1776089075425
+  modified: 1776089075425
+  description: ""
+collection:
+  - name: Cliente
+    meta:
+      id: fld_f117f16af01641afa34a793ebf2ea4a9
+      created: 1776089100334
+      modified: 1776089100334
+      sortKey: -1776089100334
+      description: ""
+    children:
+      - url: localhost:8080/clientes
+        name: New Request
+        meta:
+          id: req_eac69e8829cc4110a0ca2746609e3e0b
+          created: 1776089103216
+          modified: 1776089358002
+          isPrivate: false
+          description: ""
+          sortKey: -1776089109011
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/clientes/2
+        name: New Request
+        meta:
+          id: req_7a4814fadfda4f23b77c52ce5bbb103d
+          created: 1776089104754
+          modified: 1776095738692
+          isPrivate: false
+          description: ""
+          sortKey: -1776089108911
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/clientes
+        name: New Request
+        meta:
+          id: req_b2f9b848698f4a77801e1f0bb5cc72d1
+          created: 1776089106005
+          modified: 1776095419581
+          isPrivate: false
+          description: ""
+          sortKey: -1776089108811
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Valdo" , 
+            	"cpf": "404.331.140-02", 
+            	"telefone": "19999999999", 
+            	"cep": "13170-023", 
+            	"complemento": "é uma casa",
+            	"numero": 123
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/clientes/1
+        name: New Request
+        meta:
+          id: req_d768af0cd7c544f0b455a09c6e572187
+          created: 1776089107156
+          modified: 1776096621167
+          isPrivate: false
+          description: ""
+          sortKey: -1776089108711
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Valdo" , 
+            	"cpf": "404.331.140-02", 
+            	"telefone": "19989773276", 
+            	"cep": "13170-023", 
+            	"complemento": "é uma apartamento",
+            	"numero": 387
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_982e9ed8e3623b6746388f99e105fab52ac1c952
+    created: 1776089075432
+    modified: 1776089075432
+environments:
+  name: Base Environment
+  meta:
+    id: env_982e9ed8e3623b6746388f99e105fab52ac1c952
+    created: 1776089075429
+    modified: 1776089075429
+    isPrivate: false
